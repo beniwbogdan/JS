@@ -4,4 +4,5 @@
 ## -Podstawy programowania zorientowanego obiektowo (object-oriented programming)
 
 task1 - increase the fontSize of every another list element(2 ways).
+task2 - https://beniwbogdan.github.io/js_course/task2
   
