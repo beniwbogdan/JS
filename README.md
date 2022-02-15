@@ -5,5 +5,5 @@
 
 ## task1 - increase the fontSize of every another list element(2 ways).
 ## task2 - https://beniwbogdan.github.io/js_course/task2
-## task2 - https://beniwbogdan.github.io/js_course/task3
+## task3 - https://beniwbogdan.github.io/js_course/task3
   
