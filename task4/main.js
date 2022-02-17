@@ -1,33 +1,40 @@
-const button = document.querySelector("button");
-const ulElem = document.createElement("ul");
+let size = 10;
+let elem =1;
 
-let element = 1;
-//const liElem = document.querySelectorAll("li");
+init =()=>{
+const butt = document.createElement("button");
+const buttRemove = document.createElement("button");
+butt.textContent ="PUSH";
+buttRemove.textContent ="REMOVE";
 
-const liElem = document.createElement("li");
+document.body.appendChild(butt);
+document.body.appendChild(buttRemove);
 
-createFun = () => {
-  const ulist = document.body.appendChild(ulElem);
+const ulEl = document.createElement("ul");
+document.body.appendChild(ulEl);
 
-  for (let i = 1; i <= 10; i++) { 
-
-    ulist.textContent = `element ${i}`;
-    document.querySelector("ul").appendChild(ulist);
-    console.log(ulist);
-  }
-
-  liElem.style.fontSize = "30px";
-  liElem.style.color = "red";
-  liElem.style.backgroundColor = "black";
-  console.log(ulElem);
+butt.addEventListener("click", createLiElements)
+buttRemove.addEventListener("click", removeLiElements)
 }
 
-button.addEventListener("click", function () {
-  createFun();
-  for (let i = 0; i < ulElem.length; i++) {
-    const element = ulElem[i];
-    console.log(element);
-  }
+
+        createLiElements =()=>{
+        for (let i = 1; i <= 10; i++) {
+            const liEl = document.createElement("li");
+            liEl.textContent =`element ${elem++}`;
+            liEl.style.fontSize = `${size++}px`;
+            document.querySelector("ul").appendChild(liEl);
+            console.log(liEl);
+        }
+    }
 
 
-})
+ 
+    removeLiElements =()=>{
+            document.querySelector("ul").textContent="";
+            elem = 1;
+            size = 10;
+    }  
+       
+init();
+
