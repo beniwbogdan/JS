@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
 
 body {
-    font-family: 'Comforter', cursive;
+    /* font-family: 'Comforter', cursive; */
     text-align: center;
     margin-top: 20%;
     height: 200vh;
@@ -37,4 +37,8 @@ body img {
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
+}
+
+h1 {
+    text-align: center;
 }

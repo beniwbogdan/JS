@@ -10,8 +10,8 @@ divE.addEventListener("mousedown",function(){
    divE.style.backgroundColor = "gray";
      divE.style.transform=`translate(${+50}% ${+50}%)`;
    window.addEventListener("mousemove", function(e){
-      divE.style.marginTop = `${e.clientY}px`;
-      divE.style.marginLeft = `${e.clientX}px`;
+      divE.style.marginTop = `${e.clientY-25}px`;
+      divE.style.marginLeft = `${e.clientX-25}px`;
       console.log(e.clientY);
       // divE.style.backgroundColor="blue";
    })
@@ -20,6 +20,6 @@ divE.addEventListener("mouseup",function(){
    divE.style.backgroundColor = "black";
    
    divE.addEventListener("mouseleave", function(e){
-     
+   
    })
 })

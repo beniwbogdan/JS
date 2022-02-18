@@ -8,6 +8,6 @@ window.document.addEventListener("mousemove", function(e){
    let dataX = e.clientX;
    if (dataX>=255)dataX=1;
    if (dataY>=255)dataY=1;
-   divElem.textContent = `(${e.offsetX} ${e.offsetY})`;
-   this.body.style.backgroundColor = `rgb(${e.clientX/3}, ${e.clientY/2}, ${e.clientY * e.clientX})`;
+    divElem.textContent = `(${e.offsetX} ${e.offsetY})`;
+    this.body.style.backgroundColor = `rgb(${e.clientX/3}, ${e.clientY/2}, ${e.clientY * e.clientX})`;
 })
